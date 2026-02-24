@@ -112,7 +112,7 @@ html {
 /* style.css */
 .hero {
     height: 85vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('hero-image.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/Visuals/heroBg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -138,7 +138,6 @@ html {
     font-family: var(--font-serif);
     font-size: clamp(2.5rem, 8vw, 4rem);
     line-height: 1.1;
-    color: #4E3629;
     margin-bottom: 1.5rem;
 }
 
@@ -156,8 +155,8 @@ html {
 
 .btn-outline {
     background-color: transparent;
-    border: 1px solid var(--cocoa-brown);
-    color: var(--cocoa-brown);
+    border: 1px solid var(--warm-cream);
+    color: var(--warm-cream);
 }
 /* Updated Hero CTA Styles */
 .hero-cta {
@@ -174,9 +173,9 @@ html {
 /* Secondary Button (Outline Honey Gold) */
 .btn-secondary-outline {
     background-color: transparent;
-    color: var(--cocoa-brown);
+    color: var(--warm-cream);
     /* */
-    border: 1px solid var(--cocoa-brown);
+    border: 1px solid var(--warm-cream);
     transition: all 0.3s ease;
 }
 
