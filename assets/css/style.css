@@ -1,19 +1,38 @@
 /* style.css */
+/* UPDATED BRANDING ACCORDING TO LOGO */
 :root {
-    --cream: #FFFDD0;
-    /* Background */
-    --taupe: #483C32;
-    /* Primary Text & Branding */
-    --rose: #FADADD;
-    /* Accents & Buttons */
+    --warm-cream: #FAF7F2;
+    /* Main Background */
+    --cocoa-brown: #4E3629;
+    /* Primary Branding & Buttons */
+    --soft-taupe: #7A6A5E;
+    /* Body Text */
+    --honey-gold: #C5A059;
+    /* Accents & Icons */
+    --sand-border: #E8E0D5;
+    /* Subtle Dividers */
     --white: #ffffff;
-    --black: #1a1a1a;
 
-    /* Typography */
     --font-serif: 'Playfair Display', serif;
     --font-sans: 'Inter', sans-serif;
 }
 
+body {
+    background-color: var(--warm-cream);
+    color: var(--cocoa-brown);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+}
+
+/* Update your headings to match the logo weight */
+h1,
+h2,
+h3 {
+    font-family: var(--font-serif);
+    color: var(--cocoa-brown);
+    letter-spacing: -0.02em;
+}
 * {
     margin: 0;
     padding: 0;
@@ -24,23 +43,21 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: var(--cream);
-    color: var(--taupe);
-    font-family: var(--font-sans);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+.slide img,
+.pizza-slide img {
+    filter: sepia(10%) contrast(105%);
 }
 
 /* Navbar Base Container */
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 253, 208, 0.95);
+    background: rgba(250, 247, 242, 0.95);
     /* Semi-transparent Cream */
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(72, 60, 50, 0.1);
+    border-bottom: 1px solid var(--sand-border);
     z-index: 1000;
     padding: 0.6rem 0;
 }
@@ -105,6 +122,9 @@ body {
     text-align: center;
     color: var(--white);
     padding: 0 10%;
+}
+.hero-cta{
+    margin-top: 1rem;
 }
 
 .brand-tagline {
@@ -192,11 +212,15 @@ body {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin: 1rem 0;
 }
+.mini-divider,
+.short-line {
+    background-color: var(--honey-gold);
+    height: 1.5px;
+    opacity: 0.8;
+}
 
 .mini-divider {
     width: 60px;
-    height: 2px;
-    background-color: var(--rose);
     margin: 0 auto 1.5rem;
 }
 
@@ -526,8 +550,6 @@ body {
 
 .short-line {
     width: 30px;
-    height: 1px;
-    background: var(--taupe);
     margin: 10px auto;
 }
 
@@ -768,9 +790,12 @@ body {
 }
 
 /* DM Section */
+
 .dm-highlight {
     text-align: center;
-    background-color: var(--rose);
+    background-color: var(--white);
+    border: 1px solid var(--sand-border);
+    color: var(--cocoa-brown);
     padding: 40px 20px;
     border-radius: 20px;
     margin-bottom: 40px;
