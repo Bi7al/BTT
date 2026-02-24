@@ -138,11 +138,13 @@ html {
     font-family: var(--font-serif);
     font-size: clamp(2.5rem, 8vw, 4rem);
     line-height: 1.1;
+    color: #4E3629;
     margin-bottom: 1.5rem;
 }
 
 .btn {
     display: inline-block;
+    
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -150,15 +152,12 @@ html {
     transition: all 0.3s ease;
 }
 
-.btn-primary {
-    background-color: var(--white);
-    color: var(--taupe);
-}
+
 
 .btn-outline {
     background-color: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
+    border: 1px solid var(--cocoa-brown);
+    color: var(--cocoa-brown);
     margin-left: 1rem;
 }
 
@@ -886,7 +885,7 @@ html {
 }
 
 .submit-btn {
-    background-color: var(--taupe);
+    background-color: var(--cocoa-brown);
     color: var(--white);
     border: none;
     padding: 18px;
