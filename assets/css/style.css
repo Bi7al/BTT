@@ -158,7 +158,43 @@ html {
     background-color: transparent;
     border: 1px solid var(--cocoa-brown);
     color: var(--cocoa-brown);
-    margin-left: 1rem;
+}
+/* Updated Hero CTA Styles */
+.hero-cta {
+    display: flex;
+    gap: 15px;
+    /* Spacing between the two buttons */
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Primary Button (Solid Cocoa Brown) */
+
+
+/* Secondary Button (Outline Honey Gold) */
+.btn-secondary-outline {
+    background-color: transparent;
+    color: var(--cocoa-brown);
+    /* */
+    border: 1px solid var(--cocoa-brown);
+    transition: all 0.3s ease;
+}
+
+
+
+/* Mobile Adjustment */
+@media (max-width: 480px) {
+    .hero-cta {
+        flex-direction: column;
+        /* Stacks buttons on small screens */
+        padding: 0 20px;
+    }
+
+    .btn {
+        width: 100%;
+        /* Full width buttons for easier thumb-tapping */
+        text-align: center;
+    }
 }
 
 /* Cakes Module Styling */
