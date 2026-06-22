@@ -703,6 +703,14 @@ html {
     margin-top: 10px;
 }
 
+/* Desktop optimization for donut slider */
+@media (min-width: 768px) {
+    .snap-item {
+        flex: 0 0 45%;
+        /* Reduce from 75% to 45% on desktop for better sizing */
+    }
+}
+
 /* Savory Module Styling */
 /* Savory Section Base */
 .savory-module {
